@@ -2,6 +2,12 @@
   --hover-color: #1a94ab;
   --text-color: #626262;
 }
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
 .nav-links {
   text-decoration: none;
   width: 113px;
@@ -23,12 +29,14 @@
 .middle-list {
   list-style-type: none;
 }
-.nav-site {
-  list-style-type: none;
-  text-align: right;
-  margin-right: 0px;
+.nav-container {
+  margin-right: 2px;
 }
 .nav-site li {
+  list-style-type: none;
+  display: inline-block;
+}
+.nav-container {
 }
 .nav-logo {
   width: 338px;
