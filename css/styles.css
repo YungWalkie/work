@@ -1,0 +1,76 @@
+:root {
+  --hover-color: #1a94ab;
+  --text-color: #626262;
+}
+.nav-links {
+  text-decoration: none;
+  width: 113px;
+  height: 42px;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--text-color);
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.nav-links:focus {
+  color: var(--hover-color);
+}
+.nav-links:hover {
+  color: var(--hover-color);
+}
+.middle-list {
+  list-style-type: none;
+}
+.nav-site {
+  list-style-type: none;
+  text-align: right;
+  margin-right: 0px;
+}
+.nav-site li {
+}
+.nav-logo {
+  width: 338px;
+  height: 25px;
+  font-size: 30px;
+  letter-spacing: 6px;
+  line-height: 24px;
+  color: #000000;
+  font-family: 'Inconsolata';
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.caption {
+  width: 885px;
+  height: 150px;
+  font-size: 14px;
+  color: #b4ad9e;
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.middle-list {
+  list-style-type: none;
+}
+.title {
+  width: 420px;
+  height: 95px;
+  font-size: 30px;
+  color: var(--text-color);
+  font-family: 'Playfair Display';
+  font-weight: 400;
+}
+.desctiption {
+  width: 420px;
+  height: 78px;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--text-color);
+  font-family: 'Playfair Display';
+  font-weight: 400;
+}
+.top-site {
+  list-style-type: none;
+}
