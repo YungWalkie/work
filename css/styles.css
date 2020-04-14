@@ -1,84 +1,201 @@
-:root {
-  --hover-color: #1a94ab;
-  --text-color: #626262;
-}
 html {
   box-sizing: border-box;
 }
 * {
   box-sizing: inherit;
 }
-.nav-links {
-  text-decoration: none;
-  width: 113px;
-  height: 42px;
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--text-color);
-  font-family: 'Playfair Display';
+:root {
+  --global-fonts: 'Playfair Display', serif;
+  --white-color: #fff;
+  --text-color: #626262;
+  --hover-color: #03a9f4;
+  --caption-color: #b4ad9e;
+}
+h3 {
+  font-size: 30px;
   font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-}
-.nav-links:focus {
-  color: var(--hover-color);
-}
-.nav-links:hover {
-  color: var(--hover-color);
-}
-.middle-list {
-  list-style-type: none;
-}
-.nav-container {
-  margin-right: 2px;
-}
-.nav-site li {
-  list-style-type: none;
-  display: inline-block;
-}
-.nav-container {
 }
 .nav-logo {
-  width: 338px;
-  height: 25px;
+  display: flex;
+  align-items: center;
   font-size: 30px;
   letter-spacing: 6px;
   line-height: 24px;
   color: #000000;
+  text-transform: uppercase;
   font-family: 'Inconsolata';
   font-weight: 400;
   text-align: center;
-  text-transform: uppercase;
+  /* margin-right: 100px; */
 }
-.caption {
-  width: 885px;
-  height: 150px;
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+body {
+  background-color: var(--white-color);
+  color: var(--text-color);
+}
+.site-nav {
+  text-transform: uppercase;
+  display: flex;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+.container {
+  width: 901px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-header {
+  /* display: flex; */
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.container-first-part {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.first-part-list {
+  text-align: center;
+}
+.first-part-text .caption {
   font-size: 14px;
-  color: #b4ad9e;
+  color: var(--caption-color);
   font-family: 'Ubuntu';
   font-weight: 300;
-  text-transform: uppercase;
 }
-.middle-list {
-  list-style-type: none;
-}
-.title {
-  width: 420px;
-  height: 95px;
+.first-part-text .title {
   font-size: 30px;
   color: var(--text-color);
   font-family: 'Playfair Display';
   font-weight: 400;
 }
-.desctiption {
-  width: 420px;
-  height: 78px;
+.first-part-text .description {
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+  font-family: 'Playfair Display';
+  font-weight: 400;
+}
+.first-part-list img {
+  width: 1062px;
+  height: 509px;
+  background-color: #f2f2f2;
+}
+.first-part-top {
+  padding: 0px;
+}
+.site-header {
+  min-height: 180px;
+}
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: flex-end; */
+  /* align-items: center; */
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--hover-color);
+}
+
+.site-nav .link {
+  display: block;
+  margin-right: 45px;
+  margin-bottom: 76px;
+  margin-left: 45px;
+  margin-top: 75px;
+  margin-bottom: 76px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--text-color);
+  font-weight: 400;
+  text-align: center;
+}
+
+.caption {
+  text-transform: uppercase;
+  margin-top: 0px;
+  padding-top: 28px;
+  margin-bottom: 28px;
+}
+.title {
+  margin-top: 0px;
+  margin-bottom: 34px;
+}
+.description {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.second-part .caption {
+  font-size: 14px;
+  color: var(--caption-color);
+  font-family: 'Ubuntu';
+  font-weight: 300;
+}
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-top: 0px;
+}
+.feature-list .description {
   font-size: 14px;
   line-height: 24px;
   color: var(--text-color);
   font-family: 'Playfair Display';
   font-weight: 400;
 }
-.top-site {
-  list-style-type: none;
+.feature-list-item {
+  flex-grow: 0;
+  margin-right: 60px;
+  padding: 0px;
+  width: 420px;
+  margin-bottom: 132px;
+}
+.feature-list-item:nth-child(2n) {
+  margin-right: 0px;
+}
+.feature-list .description {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--text-color);
+  font-family: 'Playfair Display';
+  font-weight: 400;
+}
+.button:hover {
+  color: white;
+  background-color: var(--text-color);
+}
+
+.bottom-site {
+  padding-bottom: 70px;
+  text-align: center;
+}
+.button-bottom {
+  background-color: var(--white-color);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: var(--global-fonts);
+
+  border: 1px solid var(--text-color);
+}
+
+.button-bottom:hover {
+  background-color: var(--text-color);
+  color: var(--white-color);
 }
