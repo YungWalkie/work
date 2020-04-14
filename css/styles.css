@@ -15,6 +15,9 @@ h3 {
   font-size: 30px;
   font-weight: 400;
 }
+a {
+  text-decoration: none;
+}
 .nav-logo {
   display: flex;
   align-items: center;
@@ -158,9 +161,6 @@ body {
   width: 420px;
   margin-bottom: 132px;
 }
-.feature-list-item:nth-child(2n) {
-  margin-right: 0px;
-}
 .feature-list .description {
   font-size: 14px;
   line-height: 24px;
@@ -168,6 +168,10 @@ body {
   font-family: 'Playfair Display';
   font-weight: 400;
 }
+.feature-list-item:nth-child(2n) {
+  margin-right: 0px;
+}
+
 .button:hover {
   color: white;
   background-color: var(--text-color);
@@ -182,6 +186,8 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-family: var(--global-fonts);
+  border: 1px solid var(--text-color);
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -190,9 +196,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
-  font-family: var(--global-fonts);
-
-  border: 1px solid var(--text-color);
 }
 
 .button-bottom:hover {
